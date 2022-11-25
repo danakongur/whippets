@@ -29,10 +29,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+
+collections:
+  collection: # also change this to collection name
+    output: true
+    permalink: /collection/:name # change this to the name of collection
 
 # Exclude from processing.
 # The following items will not be processed, by default.

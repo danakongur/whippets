@@ -1,0 +1,21 @@
+
+<nav class="headernav"><!--This is still set with en as default language and is as secondary language-->
+    {% if page.lang == "def" %}
+      {% for item in site.data.nav %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{%else%}class="navlink"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
+    {% elsif page.lang == "lang-2" %}
+      {% for item in site.data.nav-lang2 %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{%else%}class="navlink"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
+    {% else %}
+      <p>lang is wrong</p>
+    {% endif %}
+    {% if page.lang == "def" %}
+      <!--<a href="/is{{ page.url }}">IS</a>-->
+      <a href="/lang-2">lang-2</a>
+    {% elsif page.lang == "lang-2" %}
+      <!--<a href="/">EN</a>-->
+      <a href="/">def</a>
+    {% endif %}
+  </nav>

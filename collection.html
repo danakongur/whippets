@@ -1,0 +1,16 @@
+---
+title: Collection
+layout: default
+lang: def
+---
+
+
+{% for thing in site.collection %}
+  {% if thing.lang == "def" %}
+    <h2>
+      <a href="{{ thing.url }}">
+        {{ thing.title }}
+      </a>
+    </h2>
+  {% endif %}
+{% endfor %}

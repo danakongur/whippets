@@ -1,0 +1,18 @@
+---
+title: Posts
+permalink: /posts/
+layout: default
+lang: def
+---
+
+
+<ul>
+    {% for post in site.posts %}
+      {% if post.lang == "def" %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  

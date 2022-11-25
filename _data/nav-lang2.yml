@@ -1,0 +1,8 @@
+- name: Home
+  link: /lang-2
+- name: About
+  link: /lang-2/about
+- name: Collection
+  link: /lang-2/collection
+- name: Posts
+  link: /lang-2/posts
