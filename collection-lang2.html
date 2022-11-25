@@ -8,7 +8,7 @@ lang: lang-2
 {% for thing in site.collection %}
   {% if thing.lang == "lang-2" %}
     <h2>
-      <a href="{{ thing.url }}">
+      <a href="{{ site.baseurl }}{{ thing.url }}">
         {{ thing.title }}
       </a>
     </h2>
