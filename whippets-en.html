@@ -1,15 +1,17 @@
 ---
-title: Collection
+title: Whippets
 layout: default
-lang: def
+permalink: /en/whippets
+lang: en
 ---
 
 
-{% for thing in site.collection %}
-  {% if thing.lang == "def" %}
+{% for thing in site.whippets %}
+  {% if thing.lang == "en" %}
     <h2>
       <a href="{{ site.baseurl }}{{ thing.url }}">
         {{ thing.title }}
+        <br><img src="{{ thing.img }}">
       </a>
     </h2>
   {% endif %}

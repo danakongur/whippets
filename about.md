@@ -2,7 +2,7 @@
 layout: default
 title: About
 permalink: /about/
-lang: def
+lang: is
 ---
 
 # About

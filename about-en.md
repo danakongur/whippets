@@ -1,8 +1,8 @@
 ---
 layout: default
 title: About
-lang: lang-2
-permalink: /lang-2/about
+lang: en
+permalink: /en/about
 ---
 
 # About

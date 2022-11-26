@@ -1,9 +1,9 @@
-- name: Home
+- name: Heim
   link: /
-- name: About
+- name: Um okkur
   link: /about
-- name: Collection
-  link: /collection
-- name: Posts
+- name: Whippetar
+  link: /whippets
+- name: Fréttir
   link: /posts
 
